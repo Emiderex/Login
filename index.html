@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-in page</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./login.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <h2>Log in</h2>
+                <form id="form" method="post" name="login">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username"/>
+                    <label>Password</label>
+                    <input type="password" name="password" id="password"/>
+                    <!--pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"-->
+                    <input type="button" value="Login" id="submit" onclick="validate()"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
